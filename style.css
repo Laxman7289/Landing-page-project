@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 80vw;
+}
+
+.navbar {
+  display: flex;
+  height: 67px;
+  font-family: "Titillium Web", sans-serif;
+}
+.navbar li {
+  list-style: none;
+  margin: 0 12px;
+}
+.checkbox {
+  margin-right: 12px;
+  font-size: 30px;
+  color: rgba(245, 142, 39, 0.578);
+  display: none;
+  justify-content: end;
+}
+
+.section1 {
+  max-height: 100vh;
+}
+.topleft {
+  width: 50%;
+}
+.topright {
+  width: 50%;
+}
+.section1 h1 {
+  font-size: 2rem;
+}
+
+.logo {
+  font-size: 1.8rem;
+}
+.dumbbell {
+  width: 289px;
+}
+.topright .gymimage {
+  width: 466px;
+}
+
+.section2 {
+  padding: 73px;
+}
+.section2 h1 {
+  font-size: 3rem;
+}
+.section2 p {
+  padding: 0 7vw;
+  text-align: center;
+}
+.box {
+  padding: 8px 0;
+  margin: 12px 23px;
+  min-width: 20vw;
+  border-radius: 5px;
+  border: 2px solid rgb(132, 55, 11);
+  text-align: center;
+}
+.box h2 {
+  font-size: 2rem;
+  padding: 15px;
+}
+.highlighted {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.box ul {
+  list-style: none;
+}
+.box ul li {
+  margin: 12px 2px;
+}
+ul li a {
+  text-decoration: none;
+  color: black;
+}
+.plantable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 table {
+  width: 100%;
+  margin-bottom: 140px 0;
+  margin-top: 40px 0;
+  border-collapse: collapse;
+}
+.section3 table th {
+  width: 23vw;
+  border-bottom: 2px solid black;
+  padding: 15px 0;
+}
+.section3 table td {
+  border-bottom: 2px solid black;
+}
+.section3 h1 {
+  font-size: 3rem;
+}
+.section3 {
+  padding: 73px;
+}
+footer {
+  padding: 23px;
+  text-align: center;
+}
+i{
+  color: brown;
+  z-index: 1;
+}
+
+.sidebar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(242, 157, 46, 0.789);
+  transition: left 0.3s ease-out;
+}
+.open {
+  left: 0;
+}
+#checkbox1 {
+  display: none;
+}
+@media (max-width: 690px) {
+  .container {
+    width: 100vw;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .sidebar {
+    display: flex;
+  }
+  #navbar {
+    display: none;
+  }
+  .items-center {
+    justify-content: center;
+    align-items: center;
+  }
+  .checkbox {
+    display: flex;
+  }
+
+  #topright {
+    display: none;
+  }
+  .dumbbell {
+    width: 164px;
+  }
+  .topleft {
+    width: 100%;
+  }
+  .section2 {
+    width: 100%;
+    padding: 4px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section3{
+    padding: 0px;
+  }
+}
